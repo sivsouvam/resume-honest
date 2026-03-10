@@ -1,4 +1,4 @@
-# ResumeHonest — AI Resume Tailor That Won't Lie For You
+# ResumeHonest: AI Resume Tailor That Won't Lie For You
 
 A Claude skill that tailors resumes to specific job descriptions using deep research, experience discovery, confidence-scored matching, and ATS-safe formatting — while enforcing strict truthfulness guardrails so nothing gets fabricated.
 
