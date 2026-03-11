@@ -1,8 +1,8 @@
 # ResumeHonest: AI Resume Tailor That Won't Lie For You
 
-A Claude skill that tailors resumes to specific job descriptions using deep research, experience discovery, confidence-scored matching, and ATS-safe formatting — while enforcing strict truthfulness guardrails so nothing gets fabricated.
+A Claude skill that tailors resumes to specific job descriptions using deep research, experience discovery, confidence-scored matching, and ATS-safe formatting, while enforcing strict truthfulness guardrails so nothing gets fabricated.
 
-> **Your shot at a job should come down to what you've actually done — not how good you are at writing resumes.** This skill closes that gap without making things up.
+> **Your shot at a job should come down to what you've actually done, not how good you are at writing resumes.** This skill closes that gap without making things up.
 
 ---
 
@@ -16,7 +16,7 @@ Most AI resume tools do one of two things wrong: they either keyword-stuff your 
 
 **It scores every match transparently.** Each bullet in your final resume has a confidence score (direct match / transferable / adjacent / gap) so you know exactly how strong each claim is.
 
-**It refuses to fabricate.** No invented metrics. No inflated titles. No scope exaggeration. Every number in the final resume came from you, not from the AI. Guardrails are enforced at every phase — see [truthfulness-guardrails.md](truthfulness-guardrails.md) for the full rules.
+**It refuses to fabricate.** No invented metrics. No inflated titles. No scope exaggeration. Every number in the final resume came from you, not from the AI. Guardrails are enforced at every phase see [truthfulness-guardrails.md](truthfulness-guardrails.md) for the full rules.
 
 **It strips out AI-sounding language.** The humanisation pass catches "proven track record", "passionate about", "pivotal role", and dozens of other AI tells before they reach your final document.
 
@@ -39,13 +39,13 @@ Your existing resumes              →    Generation report with match scores
 
 ### The Workflow
 
-1. **Library build** — Parses your existing resumes into a searchable experience database
-2. **Role research** — Analyses the company, role benchmarks, and builds a success profile
-3. **Template generation** — Creates an optimised resume structure (you approve before proceeding)
-4. **Experience discovery** *(optional)* — Branching interview to surface undocumented skills
-5. **Content matching** — Scores and ranks experience against each template slot with confidence levels
-6. **Generation** — Produces humanised, ATS-compliant resume in multiple formats
-7. **Library update** — Saves successful resumes for future tailoring sessions
+1. **Library build**: Parses your existing resumes into a searchable experience database
+2. **Role research**: Analyses the company, role benchmarks, and builds a success profile
+3. **Template generation**: Creates an optimised resume structure (you approve before proceeding)
+4. **Experience discovery** *(optional)*: Branching interview to surface undocumented skills
+5. **Content matching**: Scores and ranks experience against each template slot with confidence levels
+6. **Generation**: Produces humanised, ATS-compliant resume in multiple formats
+7. **Library update**: Saves successful resumes for future tailoring sessions
 
 Each phase has a user checkpoint. You approve the structure, the content mapping, and the final output before anything is finalised.
 
@@ -125,13 +125,13 @@ ATS gets your resume past the software. Humanisation gets it past the human. Rec
 
 ## Example Scenarios
 
-**Internal promotion** — You're applying for a senior role at your current company. The skill researches the team's public work, consolidates your multiple internal roles, and emphasises progression.
+**Internal promotion**: You're applying for a senior role at your current company. The skill researches the team's public work, consolidates your multiple internal roles, and emphasises progression.
 
-**Career transition** — You're moving from engineering to product management. The skill reframes technical leadership as product thinking, surfaces cross-functional work you didn't highlight, and flags genuine gaps for your cover letter.
+**Career transition**: You're moving from engineering to product management. The skill reframes technical leadership as product thinking, surfaces cross-functional work you didn't highlight, and flags genuine gaps for your cover letter.
 
-**Career gap** — You took two years off to start a company. The skill frames this as entrepreneurial experience, surfaces fundraising and product skills, and presents the gap as a strength.
+**Career gap**: You took two years off to start a company. The skill frames this as entrepreneurial experience, surfaces fundraising and product skills, and presents the gap as a strength.
 
-**Batch applications** — You're applying to 4 TPM roles at different companies. The skill runs one discovery session, then tailors each resume individually with company-specific research and terminology.
+**Batch applications**: You're applying to 4 TPM roles at different companies. The skill runs one discovery session, then tailors each resume individually with company-specific research and terminology.
 
 ---
 
@@ -140,7 +140,7 @@ ATS gets your resume past the software. Humanisation gets it past the human. Rec
 <details>
 <summary><strong>Does this work with any LLM or only Claude?</strong></summary>
 
-This is built as a Claude skill and relies on Claude's tool use (file reading, web search, document generation). It's not a standalone app — it runs inside Claude Code or Claude.ai with computer use enabled.
+This is built as a Claude skill and relies on Claude's tool use (file reading, web search, document generation). It's not a standalone app, it runs inside Claude Code or Claude.ai with computer use enabled.
 </details>
 
 <details>
@@ -158,7 +158,7 @@ Markdown (.md) and Word (.docx) are generated by default. PDF is optional. The D
 <details>
 <summary><strong>What resume formats can I upload?</strong></summary>
 
-PDF, DOCX, markdown (.md), and plain text (.txt) — any combination. Most people upload a PDF of their current resume and that works fine. If you have multiple versions in different formats, upload them all and the skill will parse each one. Note: scanned/image-based PDFs may have limited text extraction — if you have a text-based version, prefer that.
+PDF, DOCX, markdown (.md), and plain text (.txt) any combination. Most people upload a PDF of their current resume and that works fine. If you have multiple versions in different formats, upload them all and the skill will parse each one. Note: scanned/image-based PDFs may have limited text extraction — if you have a text-based version, prefer that.
 </details>
 
 <details>
@@ -185,14 +185,14 @@ Within a single session, everything persists. Across sessions, Claude's file sys
 
 Contributions welcome. The areas where help would be most valuable:
 
-- **Testing across job types** — The skill has been tested primarily on PM/TPM/engineering roles. Testing with creative, healthcare, legal, or academic resumes would help broaden coverage.
-- **ATS parser validation** — If you have access to specific ATS systems, testing whether generated DOCX files parse correctly would be extremely useful.
-- **Humanisation patterns** — New AI-writing tells emerge constantly. Additions to the humanisation checklist are valuable.
-- **Experience discovery patterns** — New branching question patterns for specific skill categories.
+- **Testing across job types**: The skill has been tested primarily on PM/TPM/engineering roles. Testing with creative, healthcare, legal, or academic resumes would help broaden coverage.
+- **ATS parser validation**: If you have access to specific ATS systems, testing whether generated DOCX files parse correctly would be extremely useful.
+- **Humanisation patterns**: New AI-writing tells emerge constantly. Additions to the humanisation checklist are valuable.
+- **Experience discovery patterns**: New branching question patterns for specific skill categories.
 
 ## Author
 
-**Siv Souvam** — [GitHub](https://github.com/sivsouvam) · [LinkedIn](https://linkedin.com/in/sivsouvam)
+**Siv Souvam**: [GitHub](https://github.com/sivsouvam) · [LinkedIn](https://linkedin.com/in/sivsouvam)
 
 ## License
 
